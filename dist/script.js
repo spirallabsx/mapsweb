@@ -5,5 +5,16 @@ menuButton.addEventListener('click',()=>{const open=menuButton.getAttribute('ari
 navigation.querySelectorAll('a').forEach(a=>a.addEventListener('click',closeMenu));
 document.addEventListener('keydown',e=>{if(e.key==='Escape'&&!navigation.hidden){closeMenu();menuButton.focus();}});
 document.addEventListener('click',e=>{if(!navigation.hidden&&!navigation.contains(e.target)&&!menuButton.contains(e.target))closeMenu();});
-document.querySelectorAll('[data-service]').forEach(a=>a.addEventListener('click',()=>{document.querySelector('#service').value=a.dataset.service;}));
-document.querySelector('#contact-form').addEventListener('submit',e=>{e.preventDefault();const data=new FormData(e.currentTarget);const result=document.querySelector('#form-result');result.textContent=`Inquiry preview — not sent\n\n${data.get('name')}${data.get('company')?' · '+data.get('company'):''}\n${data.get('email')}\n${data.get('service')}\n\n${data.get('message')}\n\nThe live site will connect this form to MAPS. No inquiry has been submitted.`;result.hidden=false;});
+const serviceSelect=document.querySelector('#service');
+if(serviceSelect){
+ const requestedService=new URLSearchParams(location.search).get('service');
+ if([...serviceSelect.options].some(option=>option.value===requestedService)) serviceSelect.value=requestedService;
+}
+const contactForm=document.querySelector('#contact-form');
+if(contactForm) contactForm.addEventListener('submit',e=>{
+ e.preventDefault();
+ const data=new FormData(e.currentTarget);
+ const result=document.querySelector('#form-result');
+ result.textContent=`Prototype only — inquiry not sent.\n\n${data.get('name')}${data.get('company')?' · '+data.get('company'):''}\n${data.get('email')}\n${data.get('service')}\n\n${data.get('message')}\n\nThis form will send to MAPS once a contact destination is connected.`;
+ result.hidden=false;
+});
