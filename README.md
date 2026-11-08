@@ -1,5 +1,5 @@
 # MAPS PM prototype
-Private internal brainstorm prototype, November 2026. Iteration v0.2.
+Private internal brainstorm prototype, November 2026. Iteration v0.3.
 
 Buildless static site in `dist/`. Open `dist/index.html` or serve `dist/` with any static web server. The separate contact page is `contact.html`; `contact.hmtl` redirects to it.
 
@@ -10,3 +10,5 @@ The Send button validates input and displays a browser-only notice; it sends no 
 Reference design: https://www.hlc-pm.com/ and user-provided HLC HTML/screenshots. Reference photographs and Switzer/Castoro font assets retained for this internal study. Replace reference assets and establish final brand identity before public launch.
 
 Next inputs: confirmed business contact details, final pricing decision, inquiry destination, final legal footer.
+
+Iteration 0.3 moves the image headline to About, limits the founder card to half width on mobile, uses 16px mobile bio copy, and adds a long off-white-to-lime footer to both pages. Chris’s LinkedIn and mailto links use the details supplied by the user. The contact form remains a non-sending prototype.
