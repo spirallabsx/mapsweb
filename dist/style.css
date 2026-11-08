@@ -1694,8 +1694,8 @@ footer .logo-sub {
     }
 
     .founder-card {
-        width: 50%;
-        max-width: 280px;
+        width: 75%;
+        max-width: none;
         margin-bottom: 32px
     }
 
