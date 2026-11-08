@@ -23,3 +23,9 @@ body{font-family:'Roboto Flex',Arial,sans-serif;font-weight:180;font-optical-siz
 /* Graduated service card shades. */
 .offer.delivery{background:#e7ede1;--card-button:#d7dfcf}
 .offer.turnkey{background:#dce5d8;--card-button:#cbd6c6}
+/* Quiet technical drawings give each service a distinct visual cue. */
+.offer-top{margin-bottom:20px}
+.offer-visual{height:92px;margin:0 0 23px;overflow:hidden;color:var(--ink)}
+.offer-visual svg{display:block;width:100%;height:100%;stroke:currentColor;stroke-width:1.4;stroke-linecap:round;stroke-linejoin:round;opacity:.8}
+.offer-visual .mark-accent{fill:var(--lime);fill-opacity:.75;stroke:currentColor}
+@media(max-width:767px){.offer-top{margin-bottom:17px}.offer-visual{height:75px;margin-bottom:17px}}
