@@ -133,6 +133,30 @@ header {
     justify-content: space-between
 }
 
+.logo {
+    
+    
+    }
+
+.wordmark {
+    font-family: Arial, sans-serif;
+    font-weight: 800;
+    
+    line-height: .8;
+    letter-spacing: -.07em
+}
+
+.logo-rule {
+    
+    
+    background: currentColor
+}
+
+.logo-sub {
+    font: 700 clamp(23px, 3vw, 42px)/.96 Arial, sans-serif;
+    letter-spacing: -.035em
+}
+
 .menu-button {
     background: transparent;
     border: 0;
@@ -657,6 +681,15 @@ footer {
     gap: 50px
 }
 
+footer .wordmark {
+    }
+
+footer .logo-rule {
+    }
+
+footer .logo-sub {
+    }
+
 footer>div:not(.footer-bottom) {
     display: flex;
     gap: 30px;
@@ -761,6 +794,18 @@ a:hover {
     header {
         padding: 23px 5%
     }
+
+    .logo {
+        }
+
+    .wordmark {
+        }
+
+    .logo-rule {
+        }
+
+    .logo-sub {
+        }
 
     .menu-button {
         width: 43px;
@@ -980,6 +1025,15 @@ a:hover {
         gap: 35px
     }
 
+    footer .wordmark {
+        }
+
+    footer .logo-rule {
+        }
+
+    footer .logo-sub {
+        }
+
     footer>div:not(.footer-bottom) {
         flex-wrap: wrap;
         gap: 22px;
@@ -1003,6 +1057,17 @@ a:hover {
 }
 
 @media(max-width:380px) {
+    header .wordmark {
+        }
+
+    header .logo {
+        }
+
+    header .logo-rule {
+        }
+
+    header .logo-sub {
+        }
 
     .menu-button {
         width: 32px;
@@ -1022,6 +1087,24 @@ a:hover {
 .logo {
     gap: 14px;
     white-space: nowrap
+}
+
+.wordmark {
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+    
+    line-height: 1;
+    letter-spacing: -.045em
+}
+
+.logo-rule {
+    
+    
+    }
+
+.logo-sub {
+    font: 700 23px/1.02 Arial, Helvetica, sans-serif;
+    letter-spacing: -.025em
 }
 
 header {
@@ -1230,6 +1313,15 @@ nav {
     justify-content: space-between
 }
 
+footer .wordmark {
+    }
+
+footer .logo-rule {
+    }
+
+footer .logo-sub {
+    }
+
 .pricing a {
     font-size: 16px
 }
@@ -1263,6 +1355,31 @@ nav {
 @media(max-width:767px) {
     header {
         padding: 18px 4%
+    }
+
+    .logo,
+    header .logo {
+        }
+
+    .wordmark,
+    header .wordmark,
+    footer .wordmark {
+        
+        line-height: 1;
+        letter-spacing: -.045em
+    }
+
+    .logo-rule,
+    header .logo-rule,
+    footer .logo-rule {
+        }
+
+    .logo-sub,
+    header .logo-sub,
+    footer .logo-sub {
+        
+        line-height: 1.02;
+        letter-spacing: -.025em
     }
 
     .menu-button {
@@ -1411,6 +1528,9 @@ nav {
         grid-template-columns: 1fr;
         gap: 0
     }
+
+    footer .logo {
+        }
 }
 
 @media(prefers-reduced-motion:reduce) {
@@ -1514,6 +1634,21 @@ nav {
     max-width: 850px
 }
 
+.gradient-footer .footer-story .logo {
+    
+    margin-bottom: 45px
+}
+
+.gradient-footer .wordmark {
+    }
+
+.gradient-footer .logo-rule {
+    
+    }
+
+.gradient-footer .logo-sub {
+    }
+
 .footer-story>p {
     font-size: clamp(22px, 2.2vw, 32px);
     line-height: 1.35;
@@ -1597,6 +1732,21 @@ nav {
     .gradient-footer {
         padding: 320px 5% 25px
     }
+
+    .gradient-footer .footer-story .logo {
+        
+        margin-bottom: 32px
+    }
+
+    .gradient-footer .wordmark {
+        }
+
+    .gradient-footer .logo-rule {
+        
+        }
+
+    .gradient-footer .logo-sub {
+        }
 
     .footer-story>p {
         font-size: 19px;
@@ -1729,13 +1879,40 @@ nav a span {
     --card-button: #cbd6c6
 }
 
+/* Two-line full company name in the logo. */
+.logo-sub {
+    white-space: nowrap
+}
+
 @media(max-width:560px) {
+    header .logo {
+        }
+
+    header .wordmark {
+        }
+
+    header .logo-sub {
+        }
+
+    header .logo-rule {
+        }
+
+    .gradient-footer .logo-sub {
+        }
 }
 
 @media(max-width:380px) {
+    header .wordmark {
+        }
+
+    header .logo-sub {
+        }
 }
-/* Shared header and footer logo. */
-.logo { display: inline-flex; align-items: center; gap: 10px; }
-.wordmark { font-family: Arial, sans-serif; font-weight: 800; font-size: 40px; line-height: 1; letter-spacing: -.045em; }
-.logo-rule { flex: none; width: 1px; height: 38px; background: currentColor; }
-.logo-sub { font: 700 16px/1.02 Arial, Helvetica, sans-serif; letter-spacing: -.025em; white-space: nowrap; }
+.wordmark{}
+.logo-sub{}
+/* Fixed logo sizes at every viewport width. */
+.wordmark, header .wordmark, footer .wordmark, .gradient-footer .wordmark { font-size: 40px; }
+.logo-sub, header .logo-sub, footer .logo-sub, .gradient-footer .logo-sub { font-size: 16px; }
+/* Fixed logo geometry at every viewport width. */
+.logo, header .logo, footer .logo, .gradient-footer .footer-story .logo { display: inline-flex; align-items: center; gap: 10px; }
+.logo-rule, header .logo-rule, footer .logo-rule, .gradient-footer .logo-rule { flex: none; width: 1px; height: 38px; }
