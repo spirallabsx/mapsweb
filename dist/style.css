@@ -134,10 +134,9 @@ header {
 }
 
 .logo {
-    display: inline-flex;
-    align-items: center;
-    gap: 24px
-}
+    
+    
+    }
 
 .wordmark {
     font-family: Arial, sans-serif;
@@ -148,8 +147,8 @@ header {
 }
 
 .logo-rule {
-    height: clamp(64px, 9vw, 128px);
-    width: 2px;
+    
+    
     background: currentColor
 }
 
@@ -686,8 +685,7 @@ footer .wordmark {
     }
 
 footer .logo-rule {
-    height: 82px
-}
+    }
 
 footer .logo-sub {
     }
@@ -798,15 +796,13 @@ a:hover {
     }
 
     .logo {
-        gap: 13px
-    }
+        }
 
     .wordmark {
         }
 
     .logo-rule {
-        height: 60px
-    }
+        }
 
     .logo-sub {
         }
@@ -1033,8 +1029,7 @@ a:hover {
         }
 
     footer .logo-rule {
-        height: 65px
-    }
+        }
 
     footer .logo-sub {
         }
@@ -1066,12 +1061,10 @@ a:hover {
         }
 
     header .logo {
-        gap: 10px
-    }
+        }
 
     header .logo-rule {
-        height: 50px
-    }
+        }
 
     header .logo-sub {
         }
@@ -1105,10 +1098,9 @@ a:hover {
 }
 
 .logo-rule {
-    height: 66px;
-    width: 1px;
-    flex: none
-}
+    
+    
+    }
 
 .logo-sub {
     font: 700 23px/1.02 Arial, Helvetica, sans-serif;
@@ -1325,8 +1317,7 @@ footer .wordmark {
     }
 
 footer .logo-rule {
-    height: 58px
-}
+    }
 
 footer .logo-sub {
     }
@@ -1368,8 +1359,7 @@ footer .logo-sub {
 
     .logo,
     header .logo {
-        gap: 10px
-    }
+        }
 
     .wordmark,
     header .wordmark,
@@ -1382,8 +1372,7 @@ footer .logo-sub {
     .logo-rule,
     header .logo-rule,
     footer .logo-rule {
-        height: 38px
-    }
+        }
 
     .logo-sub,
     header .logo-sub,
@@ -1541,8 +1530,7 @@ footer .logo-sub {
     }
 
     footer .logo {
-        gap: 10px
-    }
+        }
 }
 
 @media(prefers-reduced-motion:reduce) {
@@ -1647,7 +1635,7 @@ footer .logo-sub {
 }
 
 .gradient-footer .footer-story .logo {
-    gap: 26px;
+    
     margin-bottom: 45px
 }
 
@@ -1655,9 +1643,8 @@ footer .logo-sub {
     }
 
 .gradient-footer .logo-rule {
-    height: clamp(70px, 10vw, 145px);
-    width: 2px
-}
+    
+    }
 
 .gradient-footer .logo-sub {
     }
@@ -1747,7 +1734,7 @@ footer .logo-sub {
     }
 
     .gradient-footer .footer-story .logo {
-        gap: 17px;
+        
         margin-bottom: 32px
     }
 
@@ -1755,9 +1742,8 @@ footer .logo-sub {
         }
 
     .gradient-footer .logo-rule {
-        height: 58px;
-        width: 1px
-    }
+        
+        }
 
     .gradient-footer .logo-sub {
         }
@@ -1900,8 +1886,7 @@ nav a span {
 
 @media(max-width:560px) {
     header .logo {
-        gap: 7px
-    }
+        }
 
     header .wordmark {
         }
@@ -1910,8 +1895,7 @@ nav a span {
         }
 
     header .logo-rule {
-        height: 36px
-    }
+        }
 
     .gradient-footer .logo-sub {
         }
@@ -1929,3 +1913,6 @@ nav a span {
 /* Fixed logo sizes at every viewport width. */
 .wordmark, header .wordmark, footer .wordmark, .gradient-footer .wordmark { font-size: 40px; }
 .logo-sub, header .logo-sub, footer .logo-sub, .gradient-footer .logo-sub { font-size: 16px; }
+/* Fixed logo geometry at every viewport width. */
+.logo, header .logo, footer .logo, .gradient-footer .footer-story .logo { display: inline-flex; align-items: center; gap: 10px; }
+.logo-rule, header .logo-rule, footer .logo-rule, .gradient-footer .logo-rule { flex: none; width: 1px; height: 38px; }
