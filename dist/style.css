@@ -14,3 +14,8 @@
 .offer{--card-button:#dde0d8}.offer.delivery{--card-button:#e3e8dd}.offer.turnkey{background:#e7ede1;color:var(--ink);--card-button:#d7dfcf}.offer .text-link{background:var(--card-button);color:var(--ink)}.offer .text-link:hover{background:#cdd4c6;opacity:1}.offer li{border-bottom-color:#4d55512b}.footer-story>p{font-family:Arial,"Helvetica Neue",Helvetica,sans-serif}
 @media(max-width:767px){.footer-story>p{font-size:16px;line-height:1.4}}
 @media(max-width:767px){.image-break img{object-position:85% center}}
+/* Roboto Flex body type: variable weight 180, serif display faces retained. */
+@font-face{font-family:'Roboto Flex';font-style:normal;font-weight:100 1000;font-display:swap;src:url('assets/roboto-flex-latin.woff2') format('woff2')}
+body{font-family:'Roboto Flex',Arial,sans-serif;font-weight:180;font-optical-sizing:auto}p{font-weight:180}.footer-story>p{font-family:'Roboto Flex',Arial,sans-serif;font-weight:180}nav a span{font:180 16px 'Roboto Flex',Arial,sans-serif}.work-disclosure .disclosure-icon{font:180 29px 'Roboto Flex',Arial,sans-serif}
+.image-break img{object-position:50% 65%}
+@media(max-width:767px){.image-break{height:auto;aspect-ratio:1.55;min-height:0}.image-break img{object-position:center}}
