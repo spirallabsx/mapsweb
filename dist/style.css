@@ -1922,11 +1922,11 @@ html,body{width:100%;max-width:none}
 .photo-hero,main,footer,.contact-header{width:100%;max-width:none}
 .desktop-nav{display:none}
 @media(min-width:768px){
-  .photo-hero header{position:relative;z-index:6;background:var(--lime);color:var(--ink)}
+  .photo-hero header{position:relative;z-index:6;background:transparent;color:var(--lime)}
   .desktop-nav{display:flex;align-items:center;gap:clamp(12px,1.6vw,30px);margin-left:auto;font-size:clamp(13px,1.05vw,18px);white-space:nowrap}
   .desktop-nav a{transition:opacity .2s}
   .desktop-nav a:hover{opacity:.65}
-  .desktop-contact{display:inline-flex;align-items:center;gap:18px;background:#f0eeed;border-radius:100px;padding:12px 20px}
+  .desktop-contact{display:inline-flex;align-items:center;gap:18px;background:var(--lime);color:var(--ink);border-radius:100px;padding:12px 20px}
   .desktop-contact span{font-size:24px;line-height:1}
   .menu-button,#navigation{display:none!important}
   .contact-header header{position:relative;z-index:6}
