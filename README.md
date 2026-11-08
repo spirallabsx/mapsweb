@@ -12,3 +12,7 @@ Reference design: https://www.hlc-pm.com/ and user-provided HLC HTML/screenshots
 Next inputs: confirmed business contact details, final pricing decision, inquiry destination, final legal footer.
 
 Iteration 0.3 moves the image headline to About, limits the founder card to half width on mobile, uses 16px mobile bio copy, and adds a long off-white-to-lime footer to both pages. Chris’s LinkedIn and mailto links use the details supplied by the user. The contact form remains a non-sending prototype.
+
+Latest visual update: subtle pale service cards and low-contrast buttons, 16px Arial mobile footer copy, and EV charging photo.
+
+EV asset: dist/assets/ev-charging-soft-light.png. Source stock: Kindel Media, Pexels photo 9800024, https://www.pexels.com/photo/white-electric-car-charging-9800024/ . Edited with the built-in image tool to soften daylight and remove visible lettering. Prompt: Preserve the parking lot, plugged-in white vehicle, solar canopy and main composition; use soft diffused warm daylight and gentle shadows; remove all lettering, digits, logos and words from vehicles, equipment, canopy and background; no text or watermark; realistic landscape photograph for a wide website photo with mobile crop.
