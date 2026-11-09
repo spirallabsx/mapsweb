@@ -10,15 +10,15 @@
     <title>MAPS | PM Consulting</title>
     <link rel="icon"
         href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' fill='%23cff59e'/%3E%3Ctext x='9' y='46' font-family='Arial' font-weight='bold' font-size='48' fill='%234d5551'%3Em%3C/text%3E%3C/svg%3E">
-    <link rel="stylesheet" href="style.css">
+    <script>try{if(sessionStorage.getItem("maps-preview-unlocked")==="yes")document.documentElement.classList.add("site-unlocked")}catch(e){}</script><link rel="stylesheet" href="style.css">
 </head>
 
-<body><a class="skip" href="#intro">Skip to content</a>
+<body><div class="site-gate"><form class="site-gate-form" id="site-gate-form"><div class="site-gate-logo">MAPS <span>PM Consulting</span></div><h1>Preview access</h1><p>Enter the preview password to view the site.</p><label for="site-gate-password">Password</label><input id="site-gate-password" type="password" autocomplete="current-password" required><p class="site-gate-error" id="site-gate-error" role="alert" hidden>That password didn’t match. Try again.</p><button type="submit">Enter site <span aria-hidden="true">→</span></button></form></div><a class="skip" href="#intro">Skip to content</a>
     <section class="photo-hero" id="top" aria-label="MAPS PM Consulting"><img class="hero-photo" src="assets/hero.jpg"
             alt="Light-filled commercial interior with modern lighting and an open staircase" fetchpriority="high">
         <header><a class="logo" href="#top" aria-label="MAPS Mid-Atlantic Project Solutions home"><span
                     class="wordmark">MAPS</span><span class="logo-rule"></span><span
-                    class="logo-sub">Energy Projects<br>Consulting</span></a>
+                    class="logo-sub">PM<br>Consulting</span></a>
             <div class="desktop-nav" aria-label="Main navigation"><a href="#services">Services</a><a href="#work">Work
                     with us</a><a href="#about">About MAPS</a><a class="desktop-contact" href="contact.html">Contact us
                     <span aria-hidden="true">→</span></a></div><button class="menu-button" aria-expanded="false"
@@ -171,7 +171,7 @@
                     v0.3</span><span>mapspm.com — coming soon</span></div>
         </div>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js"></script><script src="gate.js"></script>
 </body>
 
 </html>
