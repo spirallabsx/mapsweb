@@ -1948,3 +1948,9 @@ html.site-unlocked .site-gate{display:none}
 .site-gate input{width:100%;padding:15px 17px;border:1px solid var(--ink);border-radius:8px;background:#fff;color:var(--ink);font-size:18px}
 .site-gate .site-gate-error{font-size:14px;margin:12px 0 0}
 .site-gate button{display:inline-flex;align-items:center;gap:30px;margin-top:25px;padding:13px 20px;border:0;border-radius:100px;background:#f0eeed;color:var(--ink);font-size:17px}
+
+/* Founder caption hierarchy. */
+.portrait figcaption{font-size:24px}
+.portrait figcaption span{font-weight:700}
+.portrait figcaption small{font-size:16px}
+@media(max-width:767px){.portrait figcaption{font-size:21px}.portrait figcaption small{font-size:15px}}
