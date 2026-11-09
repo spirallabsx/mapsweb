@@ -1,5 +1,5 @@
 // Casual preview gate: the password is visible in source and is not authentication.
-const previewPassword = 'maps-preview-2026';
+const previewPassword = 'maps2026';
 const gateForm = document.getElementById('site-gate-form');
 if (gateForm) {
   gateForm.addEventListener('submit', event => {

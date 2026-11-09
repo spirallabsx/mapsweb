@@ -1954,3 +1954,6 @@ html.site-unlocked .site-gate{display:none}
 .portrait figcaption span{font-weight:700}
 .portrait figcaption small{font-size:16px}
 @media(max-width:767px){.portrait figcaption{font-size:21px}.portrait figcaption small{font-size:15px}}
+
+/* Desktop footer lead-in reduced by 30%. */
+@media(min-width:768px){.gradient-footer{padding-top:clamp(210px,30.1vw,462px)}}
