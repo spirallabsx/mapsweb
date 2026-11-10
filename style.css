@@ -122,7 +122,7 @@ p {
     content: '';
     position: absolute;
     inset: 0;
-    background: linear-gradient(180deg, #0005, transparent 45%, #0005);
+    background: linear-gradient(180deg, rgba(0, 0, 0, .72) 0%, rgba(0, 0, 0, .35) 16%, transparent 42%);
     z-index: -1
 }
 
@@ -1296,7 +1296,8 @@ nav {
 }
 
 .contact-page .contact {
-    min-height: calc(100svh - 116px)
+    min-height: calc(100svh - 116px);
+    background: #f9f8f7
 }
 
 .contact-page .contact .eyebrow {
@@ -1957,3 +1958,8 @@ html.site-unlocked .site-gate{display:none}
 
 /* Desktop footer lead-in reduced by 30%. */
 @media(min-width:768px){.gradient-footer{padding-top:clamp(210px,30.1vw,462px)}}
+
+/* Work With Us is always visible. */
+.work-disclosure>.work-heading{display:block;padding:0;margin:0 0 32px;border:0;cursor:default}
+.work-disclosure>.work-heading .work-label{font-size:clamp(24px,3vw,44px)}
+.work-disclosure>.work-content{display:block}
