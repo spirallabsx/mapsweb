@@ -101,7 +101,8 @@ function applyContent(content) {
           else element.textContent = value;
         } else element.textContent = value;
       }
-    } else if (bindings[key]) setText(bindings[key][0], value, bindings[key][1]);
+    } else if (key === 'home.work.label') setText('#work .work-label', /^02\s*\//.test(value) ? value : `02 / ${value.replace(/\bWith\b/, 'with')}`);
+    else if (bindings[key]) setText(bindings[key][0], value, bindings[key][1]);
   }
 }
 

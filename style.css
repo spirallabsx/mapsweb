@@ -1963,3 +1963,15 @@ html.site-unlocked .site-gate{display:none}
 .work-disclosure>.work-heading{display:block;padding:0;margin:0 0 32px;border:0;cursor:default}
 .work-disclosure>.work-heading .work-label{font-size:clamp(24px,3vw,44px)}
 .work-disclosure>.work-content{display:block}
+
+.form-honey{position:absolute;left:-10000px;width:1px;height:1px;opacity:0}
+#contact-form[hidden]{display:none}
+#form-result{border:0;margin-top:0;padding:0;font-size:clamp(20px,2.5vw,32px);line-height:1.4}
+#form-result strong{font-weight:700}
+.sent-check{display:inline-grid;place-items:center;width:1.5em;height:1.5em;border:2px solid currentColor;border-radius:50%;margin-right:.5em;font-size:.8em}
+
+#form-result{grid-column:-2 / -1}
+
+/* Match Work With Us to the other numbered section eyebrows. */
+#work .work-disclosure>.eyebrow{display:flex;padding:0 0 14px;margin:0 0 48px;border:0;border-top:1px solid var(--ink);padding-top:16px;cursor:default}
+#work .work-disclosure>.eyebrow .work-label{font-size:inherit;font-weight:inherit;line-height:inherit}

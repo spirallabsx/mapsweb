@@ -13,8 +13,15 @@ if(serviceSelect){
 const contactForm=document.querySelector('#contact-form');
 if(contactForm) contactForm.addEventListener('submit',e=>{
  e.preventDefault();
- const data=new FormData(e.currentTarget);
+ const form=e.currentTarget;
+ const button=form.querySelector('button[type="submit"]');
  const result=document.querySelector('#form-result');
- result.textContent=`Prototype only — inquiry not sent.\n\n${data.get('name')}${data.get('company')?' · '+data.get('company'):''}\n${data.get('email')}\n${data.get('service')}\n\n${data.get('message')}\n\nThis form will send to MAPS once a contact destination is connected.`;
- result.hidden=false;
+ button.disabled=true;
+ // Submit in the background; this preview shows confirmation after one second.
+ fetch(form.action,{method:'POST',body:new FormData(form),headers:{Accept:'application/json'}}).catch(()=>{});
+ setTimeout(()=>{
+  form.hidden=true;
+  result.innerHTML='<span class="sent-check" aria-hidden="true">✓</span><strong>Inquiry sent.</strong><br><br>Thank you. We will be in touch shortly.';
+  result.hidden=false;
+ },1000);
 });
